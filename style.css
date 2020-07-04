@@ -1,38 +1,60 @@
 html,body{
     margin: 0px;
     padding: 0px;
+    color: #777;
+    font-family: sans-serif,'Lucida Sans','Lucida Sans Regular';
+    font-size: 1rem;
 }
 /* ?? */
 *{
     box-sizing: border-box;
 }
+.ib{
+    display: inline-block;
+}
 .menu{
     height: 22px;
-    border: 1px solid rgb(7, 7, 7);
-    background-color: rgba(116, 114, 114, 0.199);
+    border: 1px solid red;
 }
+
 .menu-options{
     height: 56px;
-    border: 1px solid rgb(7, 7, 7);
-    background-color: rgba(99, 96, 96, 0.267);
-
+    border: 1px solid green;
 }
+
+.menu-items{
+    width: 45px;
+    font-size: 90%;
+    text-align: center;
+}
+
+.menu-options-item{
+    display: none;
+}
+
+.selected{
+    display: block;
+}
+
+#File-options>div{
+    width: 50px;
+    text-align: center;
+}
+
 .formula-bar{
     height: 26px;
-    border: 1px solid rgb(7, 7, 7);
-    background-color: rgba(99, 96, 96, 0.247);
+    border: 1px solid yellow;
 }
 /* Cell Conatiner area */
 .cell-container{
     height: calc(100vh - 124px);  
     overflow: auto;
     position: relative;
-    background-color: lightgrey;
 }
 .top-left-cell{
     height: 25px;
     width:25px;
-    background-color: rgba(94, 89, 89, 0.247);
+    background-color: gray;
     position: absolute;
 }
 .top-row{
@@ -41,7 +63,7 @@ html,body{
     left: 26px;
     height: 25px;
     top:0px;
-    background-color: rgba(102, 99, 99, 0.137);
+    background-color: lightgrey;
     text-align: center; 
 }
 .top-row>.cell{
@@ -78,7 +100,7 @@ min-height: 25px;
     min-width: 49px;
 } */
 
-/* *************sheets area********** */
+/* ****sheets area*** */
 .sheets{
     height: 20px;
     border: 1px solid darkslategrey;

@@ -1,3 +1,5 @@
+// main file where the windows are created
+
 // npm init -y
 // npm install electron --save-dev
 //create main.js
@@ -26,6 +28,8 @@ function createWindow() {
     }
   })
   
+
+  // render the ejs file inside the created window
   win.loadFile("index.ejs")
   .then(function () {
     // console.log("App Loaded successfully");
