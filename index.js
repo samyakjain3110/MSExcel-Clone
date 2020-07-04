@@ -5,7 +5,7 @@ const electron = require("electron");
 const fs = require("fs") ;
 const dialog = require("electron").remote.dialog ;
 
-
+// updating and storing the changes dynamically to the database
 $(document).ready(
     function () {
         let db ;
@@ -33,6 +33,7 @@ $(document).ready(
             })
         })
   
+    // observing any keyboards inputs for dynamic updation in cells of unsaved db    
         $("#grid .cell").on("keyup",function(){
             //update db
            let rowId =  $(this).attr("ri");
