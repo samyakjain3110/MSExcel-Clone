@@ -17,6 +17,8 @@ ejs.data({
   "rows": 100,
   "cols": 26
 })
+
+// define the function for window
 function createWindow() {
   const win = new electron.BrowserWindow({
     width: 800,
@@ -38,6 +40,8 @@ function createWindow() {
     win.webContents.openDevTools();
   })
 }
+
+// when the app is ready call the window function
 app.whenReady().then(createWindow);
 
 
